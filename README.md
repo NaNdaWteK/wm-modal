@@ -9,4 +9,5 @@ El web component wm-modal esta hecho con javascript vanilla y es sencillisimo de
 3. Crea el contenido del slot title y el del body del modal(content)
 4. Cambia los estilos desde tu página con el :root selector
 
+[View Demo](https://nandawtek.github.io/wm-modal/)
 ** Bon apetit... **
