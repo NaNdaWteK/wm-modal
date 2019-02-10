@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="modal.js"></script>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+      :root{
+        --color-primary: #dfa8ff;
+        --color-close: #616161;
+        --color-buttons: #fff;
+        --color-bkg-confirm: #54cf49;
+        --color-bkg-cancel: #ff5757;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button">Open Modal</button>
+    <wm-modal>
+      <h2 slot="title">Here is the title</h2>
+      <p slot="content">If you confirm you can close the modal</p>
+      <p slot="content">More slotted content</p>
+    </wm-modal>
+
+    <script type="text/javascript">
+      document.querySelector('button').addEventListener('click', function() {
+        let modal = document.querySelector('wm-modal')
+        if(!modal.isOpen){
+          modal.open()
+        }
+      })
+    </script>
+  </body>
+</html>
